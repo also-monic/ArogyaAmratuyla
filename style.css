@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #FFFFFF;
+    /* background-color: #510003; */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.main .page1 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+
+    >.circle {
+        height: 35vh;
+        width: 35vh;
+        border-radius: 50%;
+        background-color: #510003;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9;
+
+        >img {
+            height: 90%;
+            width: 90%;
+            border-radius: 50%;
+        }
+    }
+
+    >.nav {
+        height: 10vh;
+        width: 100%;
+        background-color: #FFFFFF;
+        opacity: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        position: fixed;
+        z-index: 10;
+        border-bottom: 2px solid #510003;
+
+
+        >a {
+            text-decoration: none;
+            color: #510003;
+            font-size: 3.2vh;
+            font-family: Oswald;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        >a:hover {
+            color: #D97200;
+        }
+
+        >a:nth-last-child(1) {
+            border: 2px solid #510003;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 30px;
+        }
+
+        >a:nth-last-child(1):hover {
+            border: 2px solid #D97200;
+            background-color: #D97200;
+            color: #FFFFFF;
+
+        }
+    }
+
+    >.desc {
+        color: white;
+        height: 60vh;
+        width: 35vw;
+        position: absolute;
+        top: 30%;
+        left: 33%;
+        opacity: 0;
+        cursor: pointer;
+
+        >h4 {
+            font-size: 3vh;
+            margin-bottom: 2vh;
+            font-family: Agbalumo;
+        }
+
+        >h2 {
+            font-size: 4vh;
+            margin-bottom: 2vh;
+            letter-spacing: 1px;
+            font-family: Agbalumo;
+
+            >span {
+                text-decoration: underline;
+            }
+
+        }
+
+        >p {
+            font-size: 3vh;
+            margin-bottom: 2vh;
+            font-family: Edu TAS Beginner;
+        }
+
+        >h3 {
+            font-size: 3vh;
+            margin-bottom: 4vh;
+            font-family: Edu TAS Beginner;
+        }
+
+        >a {
+            text-decoration: none;
+            font-size: 3vh;
+            color: #510003;
+            background-color: #FFFFFF;
+            padding: 1vh;
+            border-radius: 10px;
+            font-family: Agbalumo;
+            margin-left: 70%;
+        }
+
+        >a:hover {
+            background-color: transparent;
+            border: 2px solid #D97200;
+            color: #FFFFFF;
+            background-color: #D97200;
+        }
+
+    }
+
+    >.person {
+        height: 60vh;
+        width: 30vw;
+        background-color: forestgreen;
+        position: absolute;
+        top: 25%;
+        left: 68%;
+        background: url("./assets/Arogya-3-e1675269255273.webp");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0;
+    }
+
+
+}
+
+.main .page2 {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    >.up {
+        height: 20vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4vh;
+        font-family: Oswald;
+        color: #510003;
+    }
+
+    >.mid {
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+
+        >.left {
+            width: 40%;
+            height: 100%;
+            background: url("./assets/popular-tea-brand-AWARD-to-Arogya-Amruttulya-tea.jpeg");
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        >.right {
+            width: 40%;
+            height: 100%;
+            font-family: Edu TAS Beginner;
+            font-size: 3.5vh;
+            padding: 4px;
+            padding-top: 2vh;
+            line-height: 6vh;
+
+            >p span {
+                color: #D97200;
+                font-weight: 900;
+            }
+        }
+    }
+
+    >.bottom {
+        height: 20vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        >button {
+            padding: 3vh 3vh;
+            font-size: 3vh;
+            font-family: Oswald;
+            background-color: #ffffff;
+            color: #D97200;
+            border: 2px solid #D97200;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+
+        }
+
+        >button:hover {
+            background-color: #D97200 !important;
+            color: #FFFFFF !important;
+        }
+    }
+
+    >.layer {
+        height: 10vh;
+        width: 100%;
+        background-color: #510003;
+        color: #ffffff;
+        overflow: hidden;
+        font-family: Agbalumo;
+        font-size: 5vh;
+    }
+
+}
+
+.slider-container {
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    animation: slide 35s linear infinite;
+    word-spacing: 10px
+}
+
+.slider-content {
+    display: inline-block;
+    font-size: 5vh;
+    margin-right: 30vh;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .main .page1 {
+        height: 200vh;
+
+        >.circle {
+            height: 30vh;
+            width: 30vh;
+        }
+
+        >.nav{
+            height: 15vh;
+            /* opacity: 1; */
+            width: 100vw;
+            overflow: hidden;
+            gap: 5%;
+             
+            >a{
+                font-size: 2.3vh;
+            }
+        }
+
+        >.desc{
+            /* opacity: 1; */
+            width: 90%;
+            left: 5%;
+
+            >a{
+                margin-left: 55%;
+            }
+        }
+
+        >.person{
+            /* opacity: 1; */
+            left: 10%;
+            top: 66%;
+            height: 60vh;
+            width: 80vw;
+        }
+    }
+
+    .main .page2 {
+        height: 150vh;
+
+        >.up {
+            font-size: 3.2vh;
+            text-align: center;
+        }
+
+        >.mid {
+            height: 100vh;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10vh;
+
+            >.left {
+                height: 50%;
+                width: 82%;
+            }
+
+            >.right {
+                height: 50%;
+                width: 82%;
+                font-size: 2.5vh;
+                text-align: center;
+            }
+
+        }
+
+        >.bottom {
+            margin-top: 5vh;
+
+            >button {
+                font-size: 2vh;
+            }
+        }
+
+        >.layer {
+            font-size: 2vh;
+            height: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .slider-container {
+        animation: slide 20s linear infinite;
+    }
+}
