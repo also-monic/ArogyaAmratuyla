@@ -109,7 +109,6 @@ mm.add("(max-width : 499px)", ()=> {
         scrollTrigger: {
             trigger: ".main .page2",
             start: "-20% 90%",
-            markers : true,
         }
     });
 
